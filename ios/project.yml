@@ -1,0 +1,25 @@
+name: Olemrac
+options:
+  bundleIdPrefix: com.olemrac
+  deploymentTarget:
+    iOS: "16.0"
+  xcodeVersion: "15.0"
+targets:
+  Olemrac:
+    type: application
+    platform: iOS
+    sources:
+      - path: Olemrac
+        excludes: ["web"]
+      - path: Olemrac/web
+        type: folder          # bundled as a folder reference: web/index.html, web/icons/…
+    info:
+      path: Olemrac/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.olemrac.app
+        INFOPLIST_FILE: Olemrac/Info.plist
+        TARGETED_DEVICE_FAMILY: "1,2"
+        SWIFT_VERSION: "5.9"
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CODE_SIGN_STYLE: Automatic
