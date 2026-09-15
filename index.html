@@ -3161,7 +3161,7 @@
       if (downloads) {
         try {
           await downloads.save({ filename: name, data: csv });
-          toast(`Saved ${name} · ${rows.length} ${rows.length === 1 ? 'row' : 'rows'}`);
+          toast(native ? `Sharing ${name} · ${rows.length} ${rows.length === 1 ? 'row' : 'rows'}` : `Saved ${name} · ${rows.length} ${rows.length === 1 ? 'row' : 'rows'}`);
         } catch (err) {
           const code = err && err.code;
           if (code === 'declined') return;
@@ -3375,7 +3375,11 @@
 
   // Standalone app: everything lives on this device (IndexedDB). Downloads are plain browser downloads.
   assets = null;
-  downloads = { async save({ filename, data }) { const blob = new Blob([data], { type: 'text/csv' }); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = filename; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 10000); return { status: 'saved' }; } };
+  const native = window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.olemrac; // present inside the iOS app shell
+  downloads = { async save({ filename, data }) {
+    if (native) { native.postMessage({ type: 'share', filename, data }); return { status: 'saved' }; } // iOS: share sheet (Files, AirDrop, Mail…)
+    const blob = new Blob([data], { type: 'text/csv' }); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = filename; document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 10000); return { status: 'saved' };
+  } };
   wireExport();
   const use = Promise.resolve(null);
   use.then((db) => {
@@ -3391,7 +3395,7 @@
   window.addEventListener('beforeinstallprompt', (e) => { e.preventDefault(); installEvt = e; $('installBtn').hidden = false; });
   $('installBtn').addEventListener('click', async () => { if (!installEvt) return; installEvt.prompt(); const r = await installEvt.userChoice; if (r && r.outcome === 'accepted') $('installBtn').hidden = true; installEvt = null; });
   const standalone = window.matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
-  if (!standalone && /iphone|ipad|ipod/i.test(navigator.userAgent) && !/crios|fxios/i.test(navigator.userAgent)) $('iosHint').hidden = false;
+  if (!standalone && !native && /iphone|ipad|ipod/i.test(navigator.userAgent) && !/crios|fxios/i.test(navigator.userAgent)) $('iosHint').hidden = false;
   if ('serviceWorker' in navigator && location.protocol !== 'file:') navigator.serviceWorker.register('./sw.js').catch(() => {});
 })();
 </script>
