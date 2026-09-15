@@ -1,0 +1,259 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A100000000000000000000A1 /* OlemracApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000000000000000000A1 /* OlemracApp.swift */; };
+		A100000000000000000000A2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000000000000000000A2 /* ContentView.swift */; };
+		A100000000000000000000A3 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000000000000000000A3 /* WebView.swift */; };
+		A100000000000000000000A4 /* AppSchemeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F100000000000000000000A4 /* AppSchemeHandler.swift */; };
+		A100000000000000000000A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F100000000000000000000A5 /* Assets.xcassets */; };
+		A100000000000000000000A6 /* web in Resources */ = {isa = PBXBuildFile; fileRef = F100000000000000000000A6 /* web */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F100000000000000000000A0 /* Olemrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Olemrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F100000000000000000000A1 /* OlemracApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OlemracApp.swift; sourceTree = "<group>"; };
+		F100000000000000000000A2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F100000000000000000000A3 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		F100000000000000000000A4 /* AppSchemeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSchemeHandler.swift; sourceTree = "<group>"; };
+		F100000000000000000000A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F100000000000000000000A6 /* web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = web; sourceTree = "<group>"; };
+		F100000000000000000000A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B100000000000000000000B2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C100000000000000000000C0 = {
+			isa = PBXGroup;
+			children = (
+				C100000000000000000000C1 /* Olemrac */,
+				C100000000000000000000C2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C100000000000000000000C1 /* Olemrac */ = {
+			isa = PBXGroup;
+			children = (
+				F100000000000000000000A1 /* OlemracApp.swift */,
+				F100000000000000000000A2 /* ContentView.swift */,
+				F100000000000000000000A3 /* WebView.swift */,
+				F100000000000000000000A4 /* AppSchemeHandler.swift */,
+				F100000000000000000000A6 /* web */,
+				F100000000000000000000A5 /* Assets.xcassets */,
+				F100000000000000000000A7 /* Info.plist */,
+			);
+			path = Olemrac;
+			sourceTree = "<group>";
+		};
+		C100000000000000000000C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F100000000000000000000A0 /* Olemrac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D100000000000000000000D1 /* Olemrac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E100000000000000000000E2 /* Build configuration list for PBXNativeTarget "Olemrac" */;
+			buildPhases = (
+				B100000000000000000000B1 /* Sources */,
+				B100000000000000000000B2 /* Frameworks */,
+				B100000000000000000000B3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Olemrac;
+			productName = Olemrac;
+			productReference = F100000000000000000000A0 /* Olemrac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D100000000000000000000D0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					D100000000000000000000D1 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = E100000000000000000000E1 /* Build configuration list for PBXProject "Olemrac" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C100000000000000000000C0;
+			productRefGroup = C100000000000000000000C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D100000000000000000000D1 /* Olemrac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B100000000000000000000B3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000000000000000000A5 /* Assets.xcassets in Resources */,
+				A100000000000000000000A6 /* web in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B100000000000000000000B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A100000000000000000000A1 /* OlemracApp.swift in Sources */,
+				A100000000000000000000A2 /* ContentView.swift in Sources */,
+				A100000000000000000000A3 /* WebView.swift in Sources */,
+				A100000000000000000000A4 /* AppSchemeHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E100000000000000000000F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_TESTABILITY = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E100000000000000000000F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E100000000000000000000F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Olemrac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olemrac.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E100000000000000000000F4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Olemrac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.olemrac.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E100000000000000000000E1 /* Build configuration list for PBXProject "Olemrac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E100000000000000000000F1 /* Debug */,
+				E100000000000000000000F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E100000000000000000000E2 /* Build configuration list for PBXNativeTarget "Olemrac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E100000000000000000000F3 /* Debug */,
+				E100000000000000000000F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D100000000000000000000D0 /* Project object */;
+}
